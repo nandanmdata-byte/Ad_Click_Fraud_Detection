@@ -1,0 +1,34 @@
+{
+    "rows": 184903890,
+    "columns": 8,
+    "schema_valid": true,
+    "missing_values": {
+        "ip": 0,
+        "app": 0,
+        "device": 0,
+        "os": 0,
+        "channel": 0,
+        "click_time": 0,
+        "attributed_time": 184447044,
+        "is_attributed": 0
+    },
+    "target_counts": {
+        "0": 184447044,
+        "1": 456846
+    },
+    "positive_rate_percent": 0.247072,
+    "minimum_click_time": "2017-11-06 14:32:21",
+    "maximum_click_time": "2017-11-09 16:00:00",
+    "chronologically_sorted": true,
+    "positive_without_attributed_time": 0,
+    "negative_with_attributed_time": 0,
+    "attribution_before_click_time": 0,
+    "unique_identifier_counts": {
+        "ip": 277396,
+        "app": 706,
+        "device": 3475,
+        "os": 800,
+        "channel": 202
+    },
+    "processing_seconds": 198.55
+}

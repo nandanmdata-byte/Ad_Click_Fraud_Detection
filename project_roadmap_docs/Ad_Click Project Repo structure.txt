@@ -1,0 +1,33 @@
+Ad_Click_Fraud_Detection/
+├── README.md
+├── .gitignore
+├── requirements.txt
+├── configs/
+│   └── data_config.yaml
+├── data/
+│   ├── raw/
+│   │   ├── train.csv
+│   │   └── train_sample.csv
+│   ├── interim/
+│   ├── processed/
+│   └── fixtures/
+├── notebooks/
+│   ├── 01_data_validation.ipynb
+│   └── 02_exploratory_data_analysis.ipynb
+├── src/
+│   ├── __init__.py
+│   └── data/
+│       ├── __init__.py
+│       ├── load_data.py
+│       └── validate_data.py
+├── tests/
+├── models/
+├── reports/
+│   └── figures/
+└── docs/
+    ├── project_definition.docx
+    ├── dataset_card.md
+    ├── data_dictionary.md
+    ├── project_decisions.md
+    ├── project_progress.md
+    └── irregularities.md

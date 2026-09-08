@@ -1,0 +1,33 @@
+# Virtual environment
+.venv/
+
+# Raw and generated datasets
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Preserve folder documentation
+!data/raw/README.md
+!data/interim/README.md
+!data/processed/README.md
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Model and experiment artifacts
+models/*.joblib
+models/*.pkl
+mlruns/
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,60 @@
+{
+    "rows": 100000,
+    "columns": 8,
+    "column_names": [
+        "ip",
+        "app",
+        "device",
+        "os",
+        "channel",
+        "click_time",
+        "attributed_time",
+        "is_attributed"
+    ],
+    "schema_valid": true,
+    "data_types": {
+        "ip": "uint32",
+        "app": "uint16",
+        "device": "uint16",
+        "os": "uint16",
+        "channel": "uint16",
+        "click_time": "datetime64[us]",
+        "attributed_time": "datetime64[us]",
+        "is_attributed": "uint8"
+    },
+    "memory_mb": 2.77,
+    "missing_values": {
+        "ip": 0,
+        "app": 0,
+        "device": 0,
+        "os": 0,
+        "channel": 0,
+        "click_time": 0,
+        "attributed_time": 99773,
+        "is_attributed": 0
+    },
+    "candidate_duplicate_rows": 1,
+    "minimum_click_time": "2017-11-06 16:00:00",
+    "maximum_click_time": "2017-11-09 15:59:51",
+    "click_time_is_sorted": false,
+    "target_counts": {
+        "0": 99773,
+        "1": 227
+    },
+    "target_percentages": {
+        "0": 99.773,
+        "1": 0.227
+    },
+    "unique_values": {
+        "ip": 34857,
+        "app": 161,
+        "device": 100,
+        "os": 130,
+        "channel": 161
+    },
+    "outcome_consistency": {
+        "positive_without_attributed_time": 0,
+        "negative_with_attributed_time": 0,
+        "attributed_time_before_click_time": 0
+    }
+}

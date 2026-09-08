@@ -1,0 +1,37 @@
+project:
+  name: Ad Click Fraud Detection
+  random_seed: 42
+
+data:
+  raw_directory: data/raw
+  sample_file: train_sample.csv
+  full_file: train.csv
+  chunk_size: 1000000
+
+schema:
+  expected_columns:
+    - ip
+    - app
+    - device
+    - os
+    - channel
+    - click_time
+    - attributed_time
+    - is_attributed
+
+  identifier_columns:
+    - ip
+    - app
+    - device
+    - os
+    - channel
+
+  datetime_columns:
+    - click_time
+    - attributed_time
+
+  target_column: is_attributed
+
+reports:
+  sample_audit: reports/sample_data_audit.json
+  full_audit: reports/full_data_audit.json
