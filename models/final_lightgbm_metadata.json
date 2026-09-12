@@ -1,0 +1,76 @@
+{
+  "model_name": "Engineered LightGBM",
+  "model_type": "LightGBM LGBMClassifier",
+  "target": "is_attributed",
+  "positive_class_meaning": "Click led to an attributed app installation",
+  "validation_start": "2017-11-07T14:30:00",
+  "selection_metric": "validation_pr_auc",
+  "threshold_method": "highest_precision_at_minimum_80_percent_validation_recall",
+  "decision_threshold": 0.9543675520814835,
+  "features": [
+    "ip",
+    "app",
+    "device",
+    "os",
+    "channel",
+    "click_day",
+    "click_hour",
+    "click_minute",
+    "click_second",
+    "click_day_of_week",
+    "previous_ip_clicks",
+    "previous_ip_app_clicks",
+    "previous_ip_channel_clicks",
+    "seconds_since_previous_ip_click",
+    "seconds_since_previous_ip_app_click",
+    "seconds_since_previous_ip_channel_click"
+  ],
+  "categorical_features": [
+    "app",
+    "device",
+    "os",
+    "channel"
+  ],
+  "best_iteration": 494,
+  "validation_metrics_default_threshold": {
+    "pr_auc": 0.5492413579486926,
+    "threshold": 0.5,
+    "accuracy": 0.9873154538649359,
+    "precision": 0.12633264699153512,
+    "recall": 0.8946856772521062,
+    "f1": 0.22140250992341928,
+    "true_negatives": 1508738,
+    "false_positives": 19094,
+    "false_negatives": 325,
+    "true_positives": 2761
+  },
+  "validation_metrics_maximum_f1_threshold": {
+    "pr_auc": 0.5492413579486926,
+    "threshold": 0.990446512052794,
+    "accuracy": 0.9981357590674353,
+    "precision": 0.5359801488833746,
+    "recall": 0.5599481529488011,
+    "f1": 0.5477020602218701,
+    "true_negatives": 1526336,
+    "false_positives": 1496,
+    "false_negatives": 1358,
+    "true_positives": 1728
+  },
+  "validation_metrics_operational_threshold": {
+    "pr_auc": 0.5492413579486926,
+    "threshold": 0.9543675520814835,
+    "accuracy": 0.995238151226911,
+    "precision": 0.27007219426821266,
+    "recall": 0.8000648088139987,
+    "f1": 0.40382728164867515,
+    "true_negatives": 1521159,
+    "false_positives": 6673,
+    "false_negatives": 617,
+    "true_positives": 2469
+  },
+  "library_versions": {
+    "lightgbm": "4.7.0",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6"
+  }
+}
