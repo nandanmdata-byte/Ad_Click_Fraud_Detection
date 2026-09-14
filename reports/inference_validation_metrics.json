@@ -1,0 +1,23 @@
+{
+  "evaluation_window_start": "2017-11-07T15:15:00",
+  "evaluation_window_end": "2017-11-07T15:30:00",
+  "rows": 723252,
+  "actual_attributed_clicks": 1022,
+  "predicted_attributed_clicks": 1718,
+  "actual_positive_rate": 0.0014130621138966778,
+  "predicted_positive_rate": 0.0023753823010513623,
+  "decision_threshold": 0.24,
+  "pr_auc": 0.4486704794372006,
+  "roc_auc": 0.9827441937348156,
+  "accuracy": 0.9980228191557023,
+  "precision": 0.38125727590221187,
+  "recall": 0.6409001956947162,
+  "f1": 0.4781021897810219,
+  "brier_score": 0.0011738458813402607,
+  "log_loss": 0.004813825559759606,
+  "precision_lift_over_baseline": 269.80928308300054,
+  "true_negatives": 721167,
+  "false_positives": 1063,
+  "false_negatives": 367,
+  "true_positives": 655
+}

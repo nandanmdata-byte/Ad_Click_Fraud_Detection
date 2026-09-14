@@ -1,0 +1,9 @@
+{
+  "balanced_threshold": 0.24,
+  "balanced_precision": 0.38453038674033146,
+  "balanced_recall": 0.6203208556149733,
+  "balanced_f1": 0.4747612551159618,
+  "business_threshold": 0.15,
+  "maximum_business_value": 2104.0,
+  "message": "No threshold met both minimum requirements; using maximum F1."
+}

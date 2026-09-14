@@ -12,8 +12,8 @@ INPUT_PATH = PROJECT_ROOT / "data" / "raw" / "train.csv"
 OUTPUT_PATH = PROJECT_ROOT / "data" / "inference" / "new_clicks.parquet"
 
 # This window starts after the development and calibration data ended.
-START_TIME = pd.Timestamp("2017-11-07 15:00:00")
-END_TIME = pd.Timestamp("2017-11-07 15:15:00")
+START_TIME = pd.Timestamp("2017-11-07 15:15:00")
+END_TIME = pd.Timestamp("2017-11-07 15:30:00")
 
 CHUNK_SIZE = 1_000_000
 

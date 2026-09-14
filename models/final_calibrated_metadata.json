@@ -5,8 +5,11 @@
   "positive_class_meaning": "Click led to an attributed app installation",
   "validation_start": "2017-11-07T14:30:00",
   "selection_metric": "validation_pr_auc",
-  "threshold_method": "selected_on_calibration_period_for_minimum_80_percent_recall",
-  "decision_threshold": 0.18567326747288235,
+  "threshold_method": "maximum_f1_selected_on_threshold_tuning_period",
+  "original_decision_threshold": 0.18567326747288235,
+  "decision_threshold": 0.24,
+  "threshold_tuning_start": "2017-11-07T15:00:00",
+  "threshold_tuning_end": "2017-11-07T15:15:00",
   "features": [
     "ip",
     "app",
