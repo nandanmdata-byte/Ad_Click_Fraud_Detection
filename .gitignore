@@ -20,6 +20,10 @@ models/*.joblib
 models/*.pkl
 models/*.txt
 
+# Local metadata backups
+models/*_original.json
+models/*_prototype.json
+
 # Experiment tracking
 mlruns/
 
