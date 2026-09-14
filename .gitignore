@@ -5,11 +5,23 @@
 data/raw/*
 data/interim/*
 data/processed/*
+data/inference/*
+data/predictions/*
 
 # Preserve folder documentation
 !data/raw/README.md
 !data/interim/README.md
 !data/processed/README.md
+!data/inference/README.md
+!data/predictions/README.md
+
+# Trained model artifacts
+models/*.joblib
+models/*.pkl
+models/*.txt
+
+# Experiment tracking
+mlruns/
 
 # Python cache
 __pycache__/
@@ -21,11 +33,6 @@ __pycache__/
 # Environment variables and secrets
 .env
 .env.*
-
-# Model and experiment artifacts
-models/*.joblib
-models/*.pkl
-mlruns/
 
 # Editor and operating-system files
 .vscode/
