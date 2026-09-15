@@ -1,0 +1,92 @@
+{
+  "model_name": "LightGBM PR-AUC Challenger",
+  "purpose": "Compare against the existing calibrated champion model",
+  "target": "is_attributed",
+  "training_end": "2017-11-07T14:30:00",
+  "calibration_start": "2017-11-07T14:30:00",
+  "evaluation_start": "2017-11-07T14:45:00",
+  "evaluation_end": "2017-11-07T15:00:00",
+  "features": [
+    "ip",
+    "app",
+    "device",
+    "os",
+    "channel",
+    "click_day",
+    "click_hour",
+    "click_minute",
+    "click_second",
+    "click_day_of_week",
+    "previous_ip_clicks",
+    "previous_ip_app_clicks",
+    "previous_ip_channel_clicks",
+    "seconds_since_previous_ip_click",
+    "seconds_since_previous_ip_app_click",
+    "seconds_since_previous_ip_channel_click",
+    "app_frequency",
+    "channel_frequency",
+    "os_frequency",
+    "device_frequency",
+    "app_channel_frequency",
+    "app_os_frequency"
+  ],
+  "categorical_features": [
+    "app",
+    "device",
+    "os",
+    "channel"
+  ],
+  "selected_parameters": {
+    "num_leaves": 63,
+    "min_child_samples": 200,
+    "feature_fraction": 0.9
+  },
+  "best_iteration": 248,
+  "decision_threshold": 0.036205331514640185,
+  "candidate_results": [
+    {
+      "candidate": 1,
+      "parameters": {
+        "num_leaves": 31,
+        "min_child_samples": 100,
+        "feature_fraction": 0.9
+      },
+      "best_iteration": 76,
+      "pr_auc": 0.5297053625528226,
+      "roc_auc": 0.9805659320803741
+    },
+    {
+      "candidate": 2,
+      "parameters": {
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "feature_fraction": 0.9
+      },
+      "best_iteration": 248,
+      "pr_auc": 0.5385322212126546,
+      "roc_auc": 0.9830624416114857
+    },
+    {
+      "candidate": 3,
+      "parameters": {
+        "num_leaves": 47,
+        "min_child_samples": 300,
+        "feature_fraction": 0.8
+      },
+      "best_iteration": 109,
+      "pr_auc": 0.528250477872261,
+      "roc_auc": 0.9827904470190664
+    }
+  ],
+  "same_window_champion_pr_auc": 0.5460918460481213,
+  "evaluation_metrics": {
+    "pr_auc": 0.5385322212126546,
+    "roc_auc": 0.9830624416114857,
+    "precision": 0.5703648548026806,
+    "recall": 0.534542916957432,
+    "f1": 0.5518731988472623,
+    "brier_score": 0.0013595447747421722,
+    "threshold": 0.036205331514640185
+  },
+  "important_note": "This threshold is for development comparison only. If the challenger wins, tune and lock its operational threshold on a later window."
+}
